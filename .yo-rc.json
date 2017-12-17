@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Rong Sen Ng",
+      "authorEmail": "wes.ngrongsen@gmail.com",
+      "authorUrl": "https://github.com/motss"
+    }
+  }
+}
