@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "chalk": "^2.1.0",
+    "codecov": "^3.0.0",
     "execa": "^0.8.0",
     "gh-user": "^3.0.0",
     "git-remote-origin-url": "^2.0.0",
