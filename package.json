@@ -1,6 +1,6 @@
 {
   "name": "generator-node-tsnext",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generator for developing in TypeScript Next",
   "homepage": "https://github.com/motss/generator-node-tsnext",
   "author": {
@@ -47,7 +47,7 @@
     "testEnvironment": "node"
   },
   "scripts": {
-    "prepublish": "nsp check",
+    "prepublishOnly": "nsp check",
     "pretest": "eslint .",
     "precommit": "lint-staged",
     "test": "jest"
@@ -67,7 +67,7 @@
         "error",
         {
           "singleQuote": true,
-          "printWidth": 90
+          "printWidth": 100
         }
       ]
     },

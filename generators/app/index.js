@@ -29,14 +29,18 @@ function getDefault() {
         homepage: ghUser.html_url
       };
     })
-    .catch(e => console.error("Unable to retrieve user's name and email", e));
+    .catch(e => {
+      console.warn("Unable to retrieve user's name and email", e);
+
+      return {};
+    });
 }
 
 module.exports = class extends Generator {
   initializing() {
     this.user = {};
 
-    return getDefault().then(({ name, email, username, homepage }) => {
+    return getDefault().then(({ name, email, username, homepage } = {}) => {
       this.user.name = name || '';
       this.user.email = email || '';
       this.user.username = username || '';
@@ -46,9 +50,7 @@ module.exports = class extends Generator {
 
   prompting() {
     // Have Yeoman greet the user.
-    this.log(
-      yosay(`Welcome to the stunning ${chalk.red('generator-node-tsnext')} generator!`)
-    );
+    this.log(yosay(`Welcome to the stunning ${chalk.red('generator-node-tsnext')} generator!`));
 
     const prompts = [
       {
