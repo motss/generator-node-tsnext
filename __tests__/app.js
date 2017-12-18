@@ -11,7 +11,7 @@ describe('generator-node-tsnext:app', () => {
         packageName: `${process.cwd().replace(/(?:.*\/)(.+)/i, '$1')}`,
         description: 'Yet another generator to disrupt the world',
         homepage: 'https://github.com/awesome-tsnext',
-        repoUrl: 'git@github.com:Zumata/awesome-tsnext.git',
+        repoUrl: 'git@github.com:cashblack/awesome-tsnext.git',
         authorName: 'Cash Black',
         authorEmail: 'cash.black@gmail.com',
         authorUrl: 'cash-black.com',
