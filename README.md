@@ -39,10 +39,11 @@
 
 Please make sure that you have the followings installed on your machine:
 
-- `node >= 8.9.0`
-- `npm >= 5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url].)___
-- `eslint >= 4.0.0` ___(No guarantee it will work below the version specified here)___
-- [ESLint extension for your favorite text editor][eslint-url]
+- [node][nodejs-url] >= `8.9.0`
+- [npm][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
+- [typescript][typescript-url] >= `2.6.2` ___(No guarantee it will work below the version specified here)___
+- [tslint][tslint-url] >= `5.8.0` ___(No guarantee it will work below the version specified here)___
+- [TSLint extension for your favorite text editor][tslint-extension-url]
 
 ### Installation
 
@@ -75,13 +76,13 @@ $ npx yo node-tsnext
 
 [MIT License](https://motss.mit-license.org/) © Rong Sen Ng
 
-[node-releases-url]: https://nodejs.org/en/download/releases/
-[eslint-url]: http://eslint.org/docs/user-guide/integrations
+[nodejs-url]: https://nodejs.org
+[npm-url]: https://www.npmjs.com
+[node-releases-url]: https://nodejs.org/en/download/releases
+[typescript-url]: http://www.typescriptlang.org
+[tslint-url]: https://palantir.github.io/tslint
+[tslint-extension-url]: https://palantir.github.io/tslint/usage/third-party-tools
 [yeoman-url]: http://yeoman.io
-[npm-url]: https://www.npmjs.com/
-[nodejs-url]: https://nodejs.org/
-[facebook-messenger-url]: https://www.messenger.com
-[dialogflow-url]: https://dialogflow.com
 
 [nodei-badge]: https://nodei.co/npm/generator-node-tsnext.png?downloads=true&downloadRank=true&stars=true
 
