@@ -23,7 +23,7 @@
 [![Codacy Badge][codacy-badge]][codacy-url]
 [![codebeat badge][codebeat-badge]][codebeat-url]
 
-> To scaffold a Node.js module or project written in TypeScript.
+> To scaffold a Node.js module or project written in [TypeScript][typescript-url].
 
 ## Table of contents
 
@@ -37,7 +37,7 @@
 
 ### Pre-requisites
 
-Please make sure that you have the followings installed on your machine:
+Please make sure that you have the following dependencies installed and setup correctly:-
 
 - [node][nodejs-url] >= `8.9.0`
 - [npm][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
