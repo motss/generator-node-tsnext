@@ -25,6 +25,14 @@
 
 > To scaffold a Node.js module or project written in TypeScript.
 
+## Table of contents
+
+- [Setup](#setup)
+  - [Pre-requisites](#pre-requisites)
+  - [Installation](#installation)
+- [Getting To Know Yeoman](#getting-to-know-yeoman)
+- [License](#license)
+
 ## Setup
 
 ### Pre-requisites

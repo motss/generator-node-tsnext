@@ -1,17 +1,21 @@
 // @ts-check
 
 /** Import project dependencies */
+import * as del from 'del';
 import * as gulp from 'gulp';
-import * as ts from 'gulp-typescript';
 import * as babel from 'gulp-babel';
 import * as sq from 'gulp-sequence';
-import * as del from 'del';
+import lint from 'gulp-tslint';
+import * as ts from 'gulp-typescript';
+import * as tslint from 'tslint';
 
-/** Setting up */
 const isProd = process.env.NODE_ENV === 'production';
 const SRC = 'src';
 const TMP = '.tmp';
-const DIST = 'dist';
+const DIST = '.';
+const IGNORE_DIR = [
+  `${SRC}/demo`,
+];
 const BABELRC = {
   presets: [
     [
@@ -38,7 +42,7 @@ const BABELRC = {
   ],
   plugins: [
     'transform-function-bind',
-    ['transform-object-rest-spread', { useBuiltIns: true }]
+    ['transform-object-rest-spread', { useBuiltIns: true }],
   ],
   ignore: isProd
     ? [
@@ -49,10 +53,22 @@ const BABELRC = {
     : [],
 };
 
-gulp.task('ts', () =>
+gulp.task('lint', () =>
   gulp.src([
     `${SRC}/**/*.ts`,
     `${SRC}/**/*.tsx`,
+  ])
+    .pipe(lint({
+      configuration: isProd ? './tslint.json' : './tslint.debug.json',
+      formatter: 'stylish',
+      program: tslint.Linter.createProgram('./tsconfig.json'),
+    }))
+    .pipe(lint.report()));
+
+gulp.task('ts', () =>
+  gulp.src([
+    `${SRC}/**/*.ts*`,
+    ...IGNORE_DIR.map(n => `${isProd ? '!' : ''}${n}/**/*.ts*`),
   ])
     .pipe(ts.createProject('./tsconfig.json')())
     .pipe(gulp.dest(TMP)));
@@ -66,11 +82,16 @@ gulp.task('babel', () =>
 
 gulp.task('clean', () => del([
   TMP,
-  DIST,
+  '*.js',
+  '*.jsx',
+  '*.d.ts*',
+  'test/',
+  'demo/',
 ]));
 
 gulp.task('clear', () => del([
   TMP,
+  './gulpfile.js',
 ]));
 
 gulp.task('copy', () => gulp.src([
@@ -87,6 +108,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('build', ['clean'], cb => sq(...[
+  'lint',
   'ts',
   ['babel', 'copy'],
   'clear',

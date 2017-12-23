@@ -12,7 +12,7 @@
     "email": "<%= authorEmail %>",
     "url": "<%= authorUrl %>"
   },
-  "main": "dist/index.js",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "<%= repoUrl %>"
@@ -27,7 +27,9 @@
     "lint": "tslint --project tsconfig.json --config tslint.json",
     "lint:fix": "tslint -p . -c tslint.json --fix",
     "nsp": "nsp check",
-    "ts": "tsc gulpfile.ts"
+    "prepublishOnly": "npm run check && npm run build",
+    "ts":
+      "tsc --target esnext --lib esnext, esnext.asynciterable --module commonjs gulpfile.ts"
   },
   "dependencies": {},
   "devDependencies": {
@@ -44,6 +46,7 @@
     "gulp": "^3.9.1",
     "gulp-babel": "^7.0.0",
     "gulp-sequence": "^0.4.6",
+    "gulp-tslint": "^8.1.2",
     "gulp-typescript": "^3.2.3",
     "nsp": "^3.1.0",
     "tslint": "^5.8.0",

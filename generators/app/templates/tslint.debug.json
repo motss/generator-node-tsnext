@@ -10,6 +10,7 @@
     "no-console": false,
     "import-name": false,
     "interface-name": [true, "never-prefix"],
+    "no-debugger": false,
     "no-duplicate-imports": false,
     "no-object-literal-type-assertion": false,
     "ordered-imports": [

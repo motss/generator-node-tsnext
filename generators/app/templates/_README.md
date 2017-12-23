@@ -23,27 +23,42 @@
 
 > Simple Node.js module to output greeting message, written in [TypeScript][typescript-url].
 
-## Pre-requisite
+## Table of contents
+
+- [Pre-requisite](#pre-requisite)
+- [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+    - [Node.js](#nodejs)
+    - [Native ES modules or TypeScript](#native-es-modules-or-typescript)
+- [API Reference](#api-reference)
+  - [greeting(name)](#greetingname)
+  - [greetingSync(name)](#greetingsyncname)
+- [License](#license)
+
+## Pre-requisites
 
 - [Node.js][node-js-url] >= 8.9.0
 - [NPM][npm-url] >= 5.5.1 ([NPM][npm-url] comes with [Node.js][node-js-url] so there is no need to install separately.)
 
-## Install
+## Setup
+
+### Install
 
 ```sh
 # Install via NPM
 $ npm install --save <%= packageName %>
 ```
 
-## How to use
+### Usage
 
-### RequireJS
+#### Node.js
 
 ```js
 const greeting = require('<%= packageName %>');
 ```
 
-### Native ES modules or TypeScript
+#### Native ES modules or TypeScript
 
 ```ts
 import greeting from '<%= packageName %>';
@@ -54,11 +69,11 @@ import greeting from '<%= packageName %>';
 ### greeting(name)
 
   - name <[string][string-mdn-url]> Name of the person to greet at.
-  - returns: <[Promise][promise-mdn-url]> Promise which resolves with a greeting message.
+  - returns: <[Promise][promise-mdn-url]<[string][string-mdn-url]>> Promise which resolves with a greeting message.
 
 ### greetingSync(name)
 
-This methods works the same as `greeting(name)` except that this is a synchronous version.
+This methods works the same as `greeting(name)` except that this is the synchronous version.
 
 ## License
 
