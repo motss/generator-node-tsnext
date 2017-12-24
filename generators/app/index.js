@@ -101,7 +101,7 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(props => {
       this.props = Object.assign({}, props, {
-        docDescription: (this.props.description || '').replace(
+        docDescription: (props.description || '').replace(
           /typeScript/i,
           '[TypeScript][typescript-url]'
         )
