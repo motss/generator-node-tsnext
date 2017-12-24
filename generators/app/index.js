@@ -29,11 +29,7 @@ function getDefault() {
         homepage: ghUser.html_url
       };
     })
-    .catch(e => {
-      console.warn("Unable to retrieve user's name and email", e);
-
-      return {};
-    });
+    .catch(() => ({})); // Return empty object.
 }
 
 module.exports = class extends Generator {
