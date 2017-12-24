@@ -54,7 +54,7 @@ Please make sure that you have the following dependencies installed and setup co
 First, install `generator-node-tsnext` using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
 
 ```sh
-# Install with NPM
+# Install globally with NPM
 $ npm install -g yo generator-node-tsnext
 ```
 
@@ -65,13 +65,13 @@ Then generate your new project:
 # Then change to that new directory.
 $ mkdir my-tsnext-app && cd my-tsnext-app
 
-# Init with yo
+# Init
 $ yo node-tsnext
 ```
 
 #### NPX
 
-[npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globall installing it.
+[npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
 
 ```sh
 # Install packages with NPX and execute the CLI with this one-liner
