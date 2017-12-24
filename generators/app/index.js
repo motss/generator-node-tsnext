@@ -48,6 +48,8 @@ module.exports = class extends Generator {
     // Have Yeoman greet the user.
     this.log(yosay(`Welcome to the stunning ${chalk.red('generator-node-tsnext')} generator!`));
 
+    const fallbackDescription =
+      'Simple Node.js module to output greeting message, written in TypeScript';
     const prompts = [
       {
         type: 'input',
@@ -60,8 +62,7 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'description',
-        message: 'Description',
-        default: 'Simple Node.js module to output greeting message, written in TypeScript'
+        message: 'Description'
       },
       {
         type: 'input',
@@ -101,7 +102,7 @@ module.exports = class extends Generator {
 
     return this.prompt(prompts).then(props => {
       this.props = Object.assign({}, props, {
-        docDescription: (props.description || '').replace(
+        docDescription: (props.description || fallbackDescription).replace(
           /typeScript/i,
           '[TypeScript][typescript-url]'
         )
