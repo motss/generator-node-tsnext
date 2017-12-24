@@ -60,7 +60,8 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'description',
-        message: 'Description'
+        message: 'Description',
+        default: 'Simple Node.js module to output greeting message, written in TypeScript'
       },
       {
         type: 'input',
@@ -99,7 +100,12 @@ module.exports = class extends Generator {
     ];
 
     return this.prompt(prompts).then(props => {
-      this.props = props;
+      this.props = Object.assign({}, props, {
+        docDescription: (this.props.description || '').replace(
+          /typeScript/i,
+          '[TypeScript][typescript-url]'
+        )
+      });
     });
   }
 

@@ -21,7 +21,7 @@
 [![codacy-badge]][codacy-url]
 [![inch-badge]][inch-url]
 
-> Simple Node.js module to output greeting message, written in [TypeScript][typescript-url].
+> <%= docDescription %>
 
 ## Table of contents
 
