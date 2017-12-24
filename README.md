@@ -30,6 +30,8 @@
 - [Setup](#setup)
   - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
+    - [NPM](#npm)
+    - [NPX](#npx)
 - [Getting To Know Yeoman](#getting-to-know-yeoman)
 - [License](#license)
 
@@ -47,11 +49,13 @@ Please make sure that you have the following dependencies installed and setup co
 
 ### Installation
 
+#### NPM
+
 First, install `generator-node-tsnext` using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
 
 ```sh
 # Install with NPM
-$ npm install -g generator-node-tsnext
+$ npm install -g yo generator-node-tsnext
 ```
 
 Then generate your new project:
@@ -62,7 +66,16 @@ Then generate your new project:
 $ mkdir my-tsnext-app && cd my-tsnext-app
 
 # Init with yo
-$ npx yo node-tsnext
+$ yo node-tsnext
+```
+
+#### NPX
+
+[npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globall installing it.
+
+```sh
+# Install packages with NPX and execute the CLI with this one-liner
+$ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 ```
 
 ## Getting To Know Yeoman
@@ -76,12 +89,13 @@ $ npx yo node-tsnext
 
 [MIT License](https://motss.mit-license.org/) © Rong Sen Ng
 
+[node-releases-url]: https://nodejs.org/en/download/releases
 [nodejs-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com
-[node-releases-url]: https://nodejs.org/en/download/releases
-[typescript-url]: http://www.typescriptlang.org
-[tslint-url]: https://palantir.github.io/tslint
+[npx-url]: https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
 [tslint-extension-url]: https://palantir.github.io/tslint/usage/third-party-tools
+[tslint-url]: https://palantir.github.io/tslint
+[typescript-url]: http://www.typescriptlang.org
 [yeoman-url]: http://yeoman.io
 
 [nodei-badge]: https://nodei.co/npm/generator-node-tsnext.png?downloads=true&downloadRank=true&stars=true
