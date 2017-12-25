@@ -9,6 +9,7 @@ import lint from 'gulp-tslint';
 import * as ts from 'gulp-typescript';
 import * as tslint from 'tslint';
 
+/** Setting up */
 const isProd = process.env.NODE_ENV === 'production';
 const SRC = 'src';
 const TMP = '.tmp';

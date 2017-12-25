@@ -27,9 +27,12 @@ describe('generator-node-tsnext:app', () => {
       '.gitignore',
       '.npmignore',
       '.npmrc',
+      '.travis.yml',
+
       'CONTRIBUTORS',
       'LICENSE',
       'README.md',
+
       'clean-dir.sh',
       'gulpfile.ts',
       'tsconfig.json',
