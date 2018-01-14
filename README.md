@@ -74,6 +74,10 @@ $ yo node-tsnext
 [npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
 
 ```sh
+# Create a new directory if you haven't already.
+# Then change to that new directory.
+$ mkdir my-tsnext-app && cd my-tsnext-app
+
 # Install packages with NPX and execute the CLI with this one-liner
 $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 ```
