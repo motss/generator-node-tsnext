@@ -42,7 +42,6 @@ const BABELRC = {
     ] : []),
   ],
   plugins: [
-    'transform-function-bind',
     ['transform-object-rest-spread', { useBuiltIns: true }],
   ],
   ignore: isProd
@@ -60,7 +59,9 @@ gulp.task('lint', () =>
     `${SRC}/**/*.tsx`,
   ])
     .pipe(lint({
-      configuration: isProd ? './tslint.json' : './tslint.debug.json',
+      configuration: `./tslint${
+        isProd ? '.prod' : ''
+      }.json`,
       formatter: 'stylish',
       program: tslint.Linter.createProgram('./tsconfig.json'),
     }))

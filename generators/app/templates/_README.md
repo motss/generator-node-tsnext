@@ -61,6 +61,8 @@ const greeting = require('<%= packageName %>');
 #### Native ES modules or TypeScript
 
 ```ts
+// @ts-check
+
 import greeting from '<%= packageName %>';
 ```
 
@@ -69,7 +71,7 @@ import greeting from '<%= packageName %>';
 ### greeting(name)
 
   - name <[string][string-mdn-url]> Name of the person to greet at.
-  - returns: <[Promise][promise-mdn-url]<[string][string-mdn-url]>> Promise which resolves with a greeting message.
+  - returns: <[Promise][promise-mdn-url]&lt;[string][string-mdn-url]&gt;> Promise which resolves with a greeting message.
 
 ### greetingSync(name)
 
@@ -85,8 +87,17 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [node-js-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com
 [node-releases-url]: https://nodejs.org/en/download/releases
-[string-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+[array-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+[boolean-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+[function-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+[map-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
+[number-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+[object-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
 [promise-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+[regexp-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
+[set-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+[string-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 
 
@@ -97,14 +108,14 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [version-badge]: https://img.shields.io/npm/v/<%= packageName %>.svg?style=flat-square
 [downloads-badge]: https://img.shields.io/npm/dm/<%= packageName %>.svg?style=flat-square
 [mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/a1c57ec8-9c17-4912-932b-f1ff6284e2ae/badge
-[daviddm-badge]: https://img.shields.io/david/expressjs/express.svg?style=flat-square
+[nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/a1c57ec8-9c17-4912-932b-f1ff6284e2ae/badge?style=flat-square
+[daviddm-badge]: https://img.shields.io/david/<%= gitName %>/<%= packageName %>.svg?style=flat-square
 
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 
-[codebeat-badge]: https://codebeat.co/badges/e486e791-12b7-4198-b834-0fa5bd04e1c3
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/a70d1556b4e74711a162c4fd4dbb68a1
-[inch-badge]: http://inch-ci.org/github/<%= gitName %>/<%= packageName %>.svg?branch=master
+[codebeat-badge]: https://codebeat.co/badges/e486e791-12b7-4198-b834-0fa5bd04e1c3?style=flat-square
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/a70d1556b4e74711a162c4fd4dbb68a1?style=flat-square
+[inch-badge]: http://inch-ci.org/github/<%= gitName %>/<%= packageName %>.svg?branch=master&style=flat-square
 
 
 
