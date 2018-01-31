@@ -109,15 +109,15 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [downloads-badge]: https://img.shields.io/npm/dm/generator-node-tsnext.svg?style=flat-square
 [mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
 [daviddm-badge]: https://img.shields.io/david/motss/generator-node-tsnext.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge
+[nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge?style=flat-square
 
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 
-[coveralls-badge]: https://coveralls.io/repos/github/motss/generator-node-tsnext/badge.svg?branch=master
-[codecov-badge]: https://codecov.io/gh/motss/generator-node-tsnext/branch/master/graph/badge.svg
+[coveralls-badge]: https://coveralls.io/repos/github/motss/generator-node-tsnext/badge.svg?branch=master&style=flat-square
+[codecov-badge]: https://codecov.io/gh/motss/generator-node-tsnext/branch/master/graph/badge.svg?style=flat-square
 
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9
-[codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9?style=flat-square
+[codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a?style=flat-square
 
 [nodei-url]: https://nodei.co/npm/generator-node-tsnext/
 
