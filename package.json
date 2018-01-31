@@ -17,7 +17,9 @@
     "email": "wes.ngrongsen@gmail.com",
     "url": "https://github.com/motss"
   },
-  "files": ["generators"],
+  "files": [
+    "generators"
+  ],
   "main": "generators/index.js",
   "repository": "git@github.com:motss/generator-node-tsnext.git",
   "scripts": {
@@ -31,8 +33,13 @@
       "jest": true,
       "node": true
     },
-    "extends": ["xo", "prettier"],
-    "plugins": ["prettier"],
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "plugins": [
+      "prettier"
+    ],
     "rules": {
       "prettier/prettier": [
         "error",
@@ -74,7 +81,13 @@
     "collectCoverage": true
   },
   "lint-staged": {
-    "*.js": ["eslint --fix", "git add"],
-    "*.json": ["prettier --write", "git add"]
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "./*.json": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
