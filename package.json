@@ -25,7 +25,7 @@
   "scripts": {
     "precommit": "lint-staged",
     "prepublishOnly": "nsp check",
-    "pretest": "eslint .",
+    "pretest": "eslint . --fix",
     "test": "jest"
   },
   "eslintConfig": {
@@ -35,7 +35,10 @@
     },
     "extends": [
       "xo"
-    ]
+    ],
+    "rules": {
+      "indent": ["error", 2]
+    }
   },
   "dependencies": {
     "chalk": "^2.1.0",

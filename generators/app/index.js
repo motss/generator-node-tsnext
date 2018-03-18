@@ -36,7 +36,7 @@ module.exports = class extends Generator {
   initializing() {
     this.user = {};
 
-    return getDefault().then(({ name, email, username, homepage } = {}) => {
+    return getDefault().then(({name, email, username, homepage} = {}) => {
       this.user.name = name || '';
       this.user.email = email || '';
       this.user.username = username || '';
@@ -77,19 +77,19 @@ module.exports = class extends Generator {
       {
         type: 'input',
         name: 'authorName',
-        message: "Author's Name",
+        message: 'Author\'s Name',
         default: this.user.name
       },
       {
         type: 'input',
         name: 'authorEmail',
-        message: "Author's email",
+        message: 'Author\'s email',
         default: this.user.email
       },
       {
         type: 'input',
         name: 'authorUrl',
-        message: "Author's homepage",
+        message: 'Author\'s homepage',
         default: this.user.homepage
       },
       {
