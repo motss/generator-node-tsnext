@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "allowUnusedLabels": true,
-    "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": false,
     "allowUnreachableCode": false,
+    "allowUnusedLabels": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "newLine": "LF",
+    "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true,
     "removeComments": true,
     "traceResolution": false,
-    "newLine": "LF",
-    "experimentalDecorators": true,
+
     "lib": ["esnext", "esnext.asynciterable"],
     "moduleResolution": "node",
     "module": "es2015",

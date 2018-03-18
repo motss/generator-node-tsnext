@@ -17,13 +17,12 @@
     "url": "<%= repoUrl %>"
   },
   "scripts": {
-    "build":
-      "npm run ts && cross-env NODE_ENV=production gulp build && npm run cleanup",
+    "build": "npm run ts && cross-env NODE_ENV=production gulp build && npm run cleanup",
     "build:debug": "npm run ts && gulp build && npm run cleanup",
     "check": "npm run lint && npm run nsp",
     "cleanup": "rm -rf gulpfile.js",
     "gulp": "npm run ts && gulp",
-    "lint": "npm run ts && gulp lint && npm run cleanup",
+    "lint": "npm run ts && cross-env NODE_ENV=production gulp lint && npm run cleanup",
     "nsp": "nsp check",
     "prepublishOnly": "npm run check && npm run build",
     "ts": "tsc --target esnext --lib esnext,esnext.asynciterable --module commonjs gulpfile.ts"

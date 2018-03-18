@@ -8,15 +8,14 @@
 
 [![NPM][nodei-badge]][nodei-url]
 
-[![Build Status][travis-badge]][travis-url]
 [![Version][version-badge]][version-url]
 [![Downloads][downloads-badge]][downloads-url]
 [![MIT License][mit-license-badge]][mit-license-url]
-[![Dependency Status][daviddm-badge]][daviddm-url]
-[![NSP Status][nsp-badge]][nsp-url]
-
 [![Code of Conduct][coc-badge]][coc-url]
 
+[![Build Status][travis-badge]][travis-url]
+[![Dependency Status][daviddm-badge]][daviddm-url]
+[![NSP Status][nsp-badge]][nsp-url]
 [![Coverage percentage][coveralls-badge]][coveralls-url]
 [![codecov][codecov-badge]][codecov-url]
 
@@ -93,6 +92,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 
 [MIT License](https://motss.mit-license.org/) © Rong Sen Ng
 
+<!-- References -->
 [node-releases-url]: https://nodejs.org/en/download/releases
 [nodejs-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com
@@ -102,6 +102,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [typescript-url]: http://www.typescriptlang.org
 [yeoman-url]: http://yeoman.io
 
+<!-- Badges -->
 [nodei-badge]: https://nodei.co/npm/generator-node-tsnext.png?downloads=true&downloadRank=true&stars=true
 
 [travis-badge]: https://img.shields.io/travis/motss/generator-node-tsnext.svg?style=flat-square
@@ -119,6 +120,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9?style=flat-square
 [codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a?style=flat-square
 
+<!-- Links -->
 [nodei-url]: https://nodei.co/npm/generator-node-tsnext/
 
 [travis-url]: https://travis-ci.org/motss/generator-node-tsnext

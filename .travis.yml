@@ -3,6 +3,8 @@ dist: trusty
 node_js:
   - 8
   - 9
-after_script:
+before_script:
+  - npm install codecov coveralls
+after_success:
   - 'cat ./coverage/lcov.info | coveralls'
   - 'cat ./coverage/lcov.info | codecov'
