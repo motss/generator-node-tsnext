@@ -115,7 +115,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 <!-- Links -->
 [nodei-url]: https://nodei.co/npm/<%= packageName %>
 
-[version-url]: https://npmjs.org/package/<%= packageName %>
+[version-url]: https://www.npmjs.com/package/<%= packageName %>
 [downloads-url]: http://www.npmtrends.com/<%= packageName %>
 [mit-license-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/LICENSE
 [coc-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
