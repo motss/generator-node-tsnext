@@ -112,12 +112,13 @@ module.exports = class extends Generator {
 
   writing() {
     const TPLS = [
+      '_.gitignore',
+      '_.npmignore',
+      '_.npmrc',
+      '_.travis.yml',
       '_package.json',
       '_README.md',
-      'LICENSE',
-      '_.gitignore',
-      '_.npmrc',
-      '_.travis.yml'
+      'LICENSE'
     ];
     const RAW_GLOB_PATTERNS = ['{.,!(_)}*'];
 
