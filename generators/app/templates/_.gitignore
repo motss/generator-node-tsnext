@@ -13,14 +13,15 @@ yarn-error.log*
 
 # folders
 ./test*/
-demo*/
+coverage*/
+dist*/
 node_modules/
 
 # .js files
+*.d.ts*
 *.js
 *.jsx
-*.d.ts*
-gulpfile*.js
 
 # Do not ignore
 !**/json.d.ts
+!gulpfile*.js

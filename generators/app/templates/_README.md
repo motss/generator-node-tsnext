@@ -38,7 +38,7 @@
 ## Pre-requisites
 
 - [Node.js][node-js-url] >= 8.9.0
-- [NPM][npm-url] >= 5.5.1 ([NPM][npm-url] comes with [Node.js][node-js-url] so there is no need to install separately.)
+- [NPM][npm-url] >= 5.5.1 ([NPM][npm-url] comes with [Node.js][nodejs-url] so there is no need to install separately.)
 
 ## Setup
 
@@ -82,7 +82,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 
 <!-- References -->
 [typescript-url]: https://github.com/Microsoft/TypeScript
-[node-js-url]: https://nodejs.org
+[nodejs-url]: https://nodejs.org
 [npm-url]: https://www.npmjs.com
 [node-releases-url]: https://nodejs.org/en/download/releases
 
@@ -107,10 +107,10 @@ This methods works the same as `greeting(name)` except that this is the synchron
 
 [travis-badge]: https://img.shields.io/travis/<%= gitName %>/<%= packageName %>.svg?style=flat-square
 [daviddm-badge]: https://img.shields.io/david/<%= gitName %>/<%= packageName %>.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/a1c57ec8-9c17-4912-932b-f1ff6284e2ae/badge?style=flat-square
+[nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>/badge?style=flat-square
 
-[codebeat-badge]: https://codebeat.co/badges/e486e791-12b7-4198-b834-0fa5bd04e1c3?style=flat-square
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/a70d1556b4e74711a162c4fd4dbb68a1?style=flat-square
+[codebeat-badge]: https://codebeat.co/badges/<PROJECT_ID>?style=flat-square
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/<PROJECT_ID>?style=flat-square
 
 <!-- Links -->
 [nodei-url]: https://nodei.co/npm/<%= packageName %>
@@ -122,7 +122,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 
 [travis-url]: https://travis-ci.org/<%= gitName %>/<%= packageName %>
 [daviddm-url]: https://david-dm.org/<%= gitName %>/<%= packageName %>
-[nsp-url]: https://nodesecurity.io/orgs/<%= gitName %>/projects/a1c57ec8-9c17-4912-932b-f1ff6284e2ae
+[nsp-url]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>
 
 [codebeat-url]: https://codebeat.co/projects/github-com-<%= gitName %>-<%= packageName %>-master
 [codacy-url]: https://www.codacy.com/app/<%= gitName %>/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=<%= gitName %>/<%= packageName %>&amp;utm_campaign=Badge_Grade

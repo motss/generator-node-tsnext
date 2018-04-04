@@ -34,7 +34,7 @@ describe('generator-node-tsnext:app', () => {
       'README.md',
 
       'clean-dir.sh',
-      'gulpfile.ts',
+      'gulpfile.js',
       'tsconfig.json',
       'tslint.json',
       'package.json',
