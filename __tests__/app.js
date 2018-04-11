@@ -33,7 +33,6 @@ describe('generator-node-tsnext:app', () => {
       'LICENSE',
       'README.md',
 
-      'clean-dir.sh',
       'gulpfile.js',
       'tsconfig.json',
       'tslint.json',
