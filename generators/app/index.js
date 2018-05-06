@@ -112,6 +112,8 @@ module.exports = class extends Generator {
 
   writing() {
     const TPLS = [
+      '_.circleci/config.yml',
+      '_.editorconfig',
       '_.gitignore',
       '_.npmrc',
       '_.travis.yml',
