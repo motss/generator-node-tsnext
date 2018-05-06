@@ -44,23 +44,23 @@
     }
   },
   "dependencies": {
-    "chalk": "^2.1.0",
+    "chalk": "^2.4.1",
     "execa": "^0.10.0",
     "gh-user": "^3.0.0",
     "git-remote-origin-url": "^2.0.0",
-    "github-username": "^4.1.0",
-    "yeoman-generator": "^2.0.1",
-    "yosay": "^2.0.1"
+    "github-username": "^4.1.0"
   },
   "devDependencies": {
-    "eslint": "^4.1.0",
-    "eslint-config-xo": "^0.18.2",
+    "eslint": "^4.19.1",
+    "eslint-config-xo": "^0.22.1",
     "husky": "^0.14.3",
-    "jest": "^22.4.2",
-    "lint-staged": "^7.0.0",
+    "jest": "^22.4.3",
+    "lint-staged": "^7.0.5",
     "nsp": "^3.2.1",
-    "yeoman-assert": "^3.1.0",
-    "yeoman-test": "^1.7.0"
+    "yeoman-assert": "^3.1.1",
+    "yeoman-generator": "^2.0.5",
+    "yeoman-test": "^1.7.0",
+    "yosay": "^2.0.2"
   },
   "jest": {
     "testEnvironment": "node",

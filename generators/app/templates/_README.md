@@ -14,8 +14,11 @@
 [![Code of Conduct][coc-badge]][coc-url]
 
 [![Build Status][travis-badge]][travis-url]
+[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![NSP Status][nsp-badge]][nsp-url]
+[![codecov][codecov-badge]][codecov-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
 
 [![codebeat-badge]][codebeat-url]
 [![codacy-badge]][codacy-url]
@@ -106,8 +109,11 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
 
 [travis-badge]: https://img.shields.io/travis/<%= gitName %>/<%= packageName %>.svg?style=flat-square
+[circleci-badge]: https://circleci.com/gh/<%= gitName %>/<%= packageName %>/tree/master.svg?style=svg
 [daviddm-badge]: https://img.shields.io/david/<%= gitName %>/<%= packageName %>.svg?style=flat-square
 [nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>/badge?style=flat-square
+[codecov-badge]: https://codecov.io/gh/<%= gitName %>/<%= packageName %>/branch/master/graph/badge.svg
+[coveralls-badge]: https://coveralls.io/repos/github/<%= gitName %>/<%= packageName %>/badge.svg?branch=master
 
 [codebeat-badge]: https://codebeat.co/badges/<PROJECT_ID>?style=flat-square
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/<PROJECT_ID>?style=flat-square
@@ -121,8 +127,11 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [coc-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
 
 [travis-url]: https://travis-ci.org/<%= gitName %>/<%= packageName %>
+[circleci-url]: https://circleci.com/gh/<%= gitName %>/<%= packageName %>/tree/master
 [daviddm-url]: https://david-dm.org/<%= gitName %>/<%= packageName %>
 [nsp-url]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>
+[codecov-url]: https://codecov.io/gh/<%= gitName %>/<%= packageName %>
+[coveralls-url]: https://coveralls.io/github/<%= gitName %>/<%= packageName %>?branch=master
 
 [codebeat-url]: https://codebeat.co/projects/github-com-<%= gitName %>-<%= packageName %>-master
 [codacy-url]: https://www.codacy.com/app/<%= gitName %>/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=<%= gitName %>/<%= packageName %>&amp;utm_campaign=Badge_Grade

@@ -25,7 +25,6 @@ describe('generator-node-tsnext:app', () => {
       '.editorconfig',
       '.gitattributes',
       '.gitignore',
-      '.npmignore',
       '.npmrc',
       '.travis.yml',
 
@@ -38,6 +37,7 @@ describe('generator-node-tsnext:app', () => {
       'tslint.json',
       'package.json',
 
+      '.circleci/config.yml',
       'src/index.ts'
     ]);
   });
