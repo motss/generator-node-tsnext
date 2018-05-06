@@ -113,7 +113,6 @@ module.exports = class extends Generator {
   writing() {
     const TPLS = [
       '_.gitignore',
-      '_.npmignore',
       '_.npmrc',
       '_.travis.yml',
       '_package.json',
