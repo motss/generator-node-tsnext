@@ -115,7 +115,6 @@ module.exports = class extends Generator {
       'src/index.ts',
       'CONTRIBUTORS',
       'gulpfile.js',
-      'LICENSE',
       'tsconfig.json',
       'tslint.json',
       'tslint.prod.json'
@@ -127,6 +126,7 @@ module.exports = class extends Generator {
       '_.npmignore',
       '_.npmrc',
       '_.travis.yml',
+      '_LICENSE',
       '_package.json',
       '_README.md'
     ];
