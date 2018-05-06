@@ -14,6 +14,7 @@
 [![Code of Conduct][coc-badge]][coc-url]
 
 [![Build Status][travis-badge]][travis-url]
+[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![NSP Status][nsp-badge]][nsp-url]
 [![Coverage percentage][coveralls-badge]][coveralls-url]
@@ -106,6 +107,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [nodei-badge]: https://nodei.co/npm/generator-node-tsnext.png?downloads=true&downloadRank=true&stars=true
 
 [travis-badge]: https://img.shields.io/travis/motss/generator-node-tsnext.svg?style=flat-square
+[circleci-badge]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master.svg?style=svg
 [version-badge]: https://img.shields.io/npm/v/generator-node-tsnext.svg?style=flat-square
 [downloads-badge]: https://img.shields.io/npm/dm/generator-node-tsnext.svg?style=flat-square
 [mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
@@ -124,6 +126,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [nodei-url]: https://nodei.co/npm/generator-node-tsnext/
 
 [travis-url]: https://travis-ci.org/motss/generator-node-tsnext
+[circleci-url]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master
 [version-url]: https://www.npmjs.com/package/generator-node-tsnext
 [downloads-url]: http://www.npmtrends.com/generator-node-tsnext
 [mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE
