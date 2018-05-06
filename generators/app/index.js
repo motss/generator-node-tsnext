@@ -140,7 +140,7 @@ module.exports = class extends Generator {
     });
 
     TPLS.map(n => {
-      return this.fs.copy(
+      return this.fs.copyTpl(
         this.templatePath(n),
         this.destinationPath(n.replace(/(_)/gi, '')),
         this.props
