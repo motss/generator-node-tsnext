@@ -36,6 +36,7 @@ describe('generator-node-tsnext:app', () => {
       'gulpfile.js',
       'tsconfig.json',
       'tslint.json',
+      'tslint.prod.json',
       'package.json',
 
       'src/index.ts'

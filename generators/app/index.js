@@ -111,28 +111,41 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    const NON_TPLS = [
+      'src/index.ts',
+      'CONTRIBUTORS',
+      'gulpfile.js',
+      'LICENSE',
+      'tsconfig.json',
+      'tslint.json',
+      'tslint.prod.json'
+    ];
     const TPLS = [
+      '_.editorconfig',
+      '_.gitattributes',
       '_.gitignore',
       '_.npmignore',
       '_.npmrc',
       '_.travis.yml',
       '_package.json',
-      '_README.md',
-      'LICENSE'
+      '_README.md'
     ];
-    const RAW_GLOB_PATTERNS = ['{.,!(_)}*'];
 
-    RAW_GLOB_PATTERNS.map(rawGlobPattern =>
-      this.fs.copy(`${this.templatePath()}/**/${rawGlobPattern}`, this.destinationPath())
-    );
-
-    TPLS.map(tpl =>
-      this.fs.copyTpl(
-        this.templatePath(tpl),
-        this.destinationPath(tpl.replace(/(_)/gi, '')),
+    NON_TPLS.map(n => {
+      return this.fs.copy(
+        this.templatePath(n),
+        this.destinationPath(n),
         this.props
-      )
-    );
+      );
+    });
+
+    TPLS.map(n => {
+      return this.fs.copy(
+        this.templatePath(n),
+        this.destinationPath(n.replace(/(_)/gi, '')),
+        this.props
+      );
+    });
   }
 
   install() {
