@@ -31,15 +31,35 @@
   "eslintConfig": {
     "env": {
       "jest": true,
-      "node": true
+      "node": true,
+      "es6": true
     },
     "extends": [
-      "xo"
+      "google"
     ],
     "rules": {
       "indent": [
         "error",
         2
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 100,
+          "tabWidth": 2
+        }
+      ],
+      "require-jsdoc": [
+        "error",
+        {
+          "require": {
+            "FunctionDeclaration": false,
+            "MethodDefinition": false,
+            "ClassDeclaration": false,
+            "ArrowFunctionExpression": false,
+            "FunctionExpression": false
+          }
+        }
       ]
     }
   },
@@ -55,7 +75,6 @@
     "git-remote-origin-url": "^2.0.0",
     "github-username": "^4.1.0",
     "gulp": "^4.0.0",
-    "gulp-conflict": "^0.4.0",
     "gulp-install": "^1.1.0",
     "gulp-template": "^5.0.0",
     "minimist": "^1.2.0",
@@ -64,7 +83,7 @@
   },
   "devDependencies": {
     "eslint": "^4.1.0",
-    "eslint-config-xo": "^0.24.1",
+    "eslint-config-google": "^0.9.1",
     "husky": "^0.14.3",
     "jest": "^23.5.0",
     "lint-staged": "^7.0.0",

@@ -15,7 +15,7 @@ describe('generator-node-tsnext:app', () => {
         authorName: 'Cash Black',
         authorEmail: 'cash.black@gmail.com',
         authorUrl: 'cash-black.com',
-        gitName: 'cashblack'
+        gitName: 'cashblack',
       })
       .toPromise();
   });
@@ -25,7 +25,6 @@ describe('generator-node-tsnext:app', () => {
       '.editorconfig',
       '.gitattributes',
       '.gitignore',
-      '.npmignore',
       '.npmrc',
       '.travis.yml',
 
@@ -33,13 +32,13 @@ describe('generator-node-tsnext:app', () => {
       'LICENSE',
       'README.md',
 
-      'gulpfile.js',
+      'tsconfig.esm.json',
       'tsconfig.json',
       'tslint.json',
       'tslint.prod.json',
       'package.json',
 
-      'src/index.ts'
+      'src/index.ts',
     ]);
   });
 });
