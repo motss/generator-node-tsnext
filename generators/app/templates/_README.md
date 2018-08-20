@@ -6,33 +6,39 @@
 
 <hr />
 
-[![NPM][nodei-badge]][nodei-url]
-
 [![Version][version-badge]][version-url]
-[![Downloads][downloads-badge]][downloads-url]
+[![Node version][node-version-badge]][node-version-url]
 [![MIT License][mit-license-badge]][mit-license-url]
-[![Code of Conduct][coc-badge]][coc-url]
+
+[![Downloads][downloads-badge]][downloads-url]
+[![Total downloads][total-downloads-badge]][downloads-url]
+[![Packagephobia][packagephobia-badge]][packagephobia-url]
+[![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
 [![Build Status][travis-badge]][travis-url]
+[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
-[![NSP Status][nsp-badge]][nsp-url]
+[![codecov][codecov-badge]][codecov-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
 
-[![codebeat-badge]][codebeat-url]
-[![codacy-badge]][codacy-url]
+[![codebeat badge][codebeat-badge]][codebeat-url]
+[![Codacy Badge][codacy-badge]][codacy-url]
+[![Code of Conduct][coc-badge]][coc-url]
 
 > Better greeting message
 
 ## Table of contents
 
-- [Pre-requisite](#pre-requisite)
+- [Table of contents](#table-of-contents)
+- [Pre-requisites](#pre-requisites)
 - [Setup](#setup)
   - [Install](#install)
   - [Usage](#usage)
     - [Node.js](#nodejs)
     - [Native ES modules or TypeScript](#native-es-modules-or-typescript)
 - [API Reference](#api-reference)
-  - [greeting(name)](#greetingname)
-  - [greetingSync(name)](#greetingsyncname)
+  - [greeting([name])](#greetingname)
+  - [greetingSync([name])](#greetingsyncname)
 - [License](#license)
 
 ## Pre-requisites
@@ -67,12 +73,12 @@ import greeting from '<%= packageName %>';
 
 ## API Reference
 
-### greeting(name)
+### greeting([name])
 
 - `name` <[string][string-mdn-url]> Name of the person to greet at.
-- returns: <[Promise][promise-mdn-url]&lt;[string][string-mdn-url]&gt;> Promise which resolves with a greeting message.
+- returns: <[Promise][promise-mdn-url]<[string][string-mdn-url]>> Promise which resolves with a greeting message.
 
-### greetingSync(name)
+### greetingSync([name])
 
 This methods works the same as `greeting(name)` except that this is the synchronous version.
 
@@ -86,6 +92,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [npm-url]: https://www.npmjs.com
 [node-releases-url]: https://nodejs.org/en/download/releases
 
+<!-- MDN -->
 [array-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [boolean-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
 [function-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
@@ -98,31 +105,40 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [string-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 <!-- Badges -->
-[nodei-badge]: https://nodei.co/npm/<%= packageName %>.png?downloads=true&downloadRank=true&stars=true
+[version-badge]: https://flat.badgen.net/npm/v/<%= packageName %>
+[node-version-badge]: https://flat.badgen.net/npm/node/<%= packageName %>
+[mit-license-badge]: https://flat.badgen.net/npm/license/<%= packageName %>
 
-[version-badge]: https://img.shields.io/npm/v/<%= packageName %>.svg?style=flat-square
-[downloads-badge]: https://img.shields.io/npm/dm/<%= packageName %>.svg?style=flat-square
-[mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[downloads-badge]: https://flat.badgen.net/npm/dm/<%= packageName %>
+[total-downloads-badge]: https://flat.badgen.net/npm/dt/<%= packageName %>?label=total%20downloads
+[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/<%= packageName %>
+[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/<%= packageName %>
 
-[travis-badge]: https://img.shields.io/travis/<%= gitName %>/<%= packageName %>.svg?style=flat-square
-[daviddm-badge]: https://img.shields.io/david/<%= gitName %>/<%= packageName %>.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>/badge?style=flat-square
+[travis-badge]: https://flat.badgen.net/travis/motss/<%= packageName %>
+[circleci-badge]: https://flat.badgen.net/circleci/github/motss/<%= packageName %>
+[daviddm-badge]: https://flat.badgen.net/david/dep/motss/<%= packageName %>
+[codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/<%= packageName %>?label=codecov
+[coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/<%= packageName %>?label=coveralls
 
-[codebeat-badge]: https://codebeat.co/badges/<PROJECT_ID>?style=flat-square
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/<PROJECT_ID>?style=flat-square
+[codebeat-badge]: https://codebeat.co/badges/123
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/123
+[coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
-[nodei-url]: https://nodei.co/npm/<%= packageName %>
-
 [version-url]: https://www.npmjs.com/package/<%= packageName %>
+[node-version-url]: https://nodejs.org/en/download
+[mit-license-url]: https://github.com/motss/<%= packageName %>/blob/master/LICENSE
+
 [downloads-url]: http://www.npmtrends.com/<%= packageName %>
-[mit-license-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/LICENSE
-[coc-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
+[packagephobia-url]: https://packagephobia.now.sh/result?p=<%= packageName %>
+[bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>@1.2.0
 
-[travis-url]: https://travis-ci.org/<%= gitName %>/<%= packageName %>
-[daviddm-url]: https://david-dm.org/<%= gitName %>/<%= packageName %>
-[nsp-url]: https://nodesecurity.io/orgs/<%= gitName %>/projects/<PROJECT_ID>
+[travis-url]: https://travis-ci.org/motss/<%= packageName %>
+[circleci-url]: https://circleci.com/gh/motss/<%= packageName %>/tree/master
+[daviddm-url]: https://david-dm.org/motss/<%= packageName %>
+[codecov-url]: https://codecov.io/gh/motss/<%= packageName %>
+[coveralls-url]: https://coveralls.io/github/motss/<%= packageName %>?branch=master
 
-[codebeat-url]: https://codebeat.co/projects/github-com-<%= gitName %>-<%= packageName %>-master
-[codacy-url]: https://www.codacy.com/app/<%= gitName %>/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=<%= gitName %>/<%= packageName %>&amp;utm_campaign=Badge_Grade
+[codebeat-url]: https://codebeat.co/projects/github-com-motss-<%= packageName %>-master
+[codacy-url]: https://www.codacy.com/app/motss/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/<%= packageName %>&amp;utm_campaign=Badge_Grade
+[coc-url]: https://github.com/motss/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
