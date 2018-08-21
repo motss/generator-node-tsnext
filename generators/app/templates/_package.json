@@ -22,12 +22,13 @@
     "url": "<%= repoUrl %>"
   },
   "scripts": {
-    "build": "npm run cleanup && npm run build:cjs && npm run build:esm && mv dist/*.* . && rm -rf dist/ && echo \"> [build] Done!\"",
-    "build:cjs": "npm run lint && tsc -p tsconfig.json && echo \"> [cjs] Done!\"",
-    "build:esm": "npm run lint && tsc -p tsconfig.esm.json && echo \"> [esm] Done!\"",
-    "cleanup": "rm -rf ./*.*js ./*.d.ts dist/",
+    "build": "npm run clean && npm run lint && npm run build:cjs && npm run build:esm && echo \"> [build] Done!\"",
+    "build:cjs": "tsc -p tsconfig.json && mv dist/*.* . && echo \"> [cjs] Done!\"",
+    "build:esm": "tsc -p tsconfig.esm.json && npm run mv && echo \"> [esm] Done!\"",
+    "clean": "rm -rf ./*.*js ./*.d.ts dist/",
     "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish 'src/**/*.ts*'",
     "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish 'src/**/*.ts*'",
+    "mv": "for f in dist/*.js; do mv -- \"$f\" \"${f%.js}\".mjs; done; mv dist/*.mjs .",
     "prepublishOnly": "npm run lint && npm run build",
     "test": "jest --config ./.jestrc.json"
   },
