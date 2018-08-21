@@ -131,7 +131,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 
 [downloads-url]: http://www.npmtrends.com/<%= packageName %>
 [packagephobia-url]: https://packagephobia.now.sh/result?p=<%= packageName %>
-[bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>@1.2.0
+[bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>
 
 [travis-url]: https://travis-ci.org/motss/<%= packageName %>
 [circleci-url]: https://circleci.com/gh/motss/<%= packageName %>/tree/master
