@@ -26,9 +26,9 @@
     "build:cjs": "tsc -p tsconfig.json && mv dist/*.* . && echo \"> [cjs] Done!\"",
     "build:esm": "tsc -p tsconfig.esm.json && npm run mv && echo \"> [esm] Done!\"",
     "clean": "rm -rf ./*.*js ./*.d.ts dist/",
+    "mv": "echo \"> [WARN] The 'mv' command might not work well on Windows!\"; for f in dist/*.js; do mv -- \"$f\" \"${f%.js}\".mjs; done; mv dist/*.mjs .",
     "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish 'src/**/*.ts*'",
     "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish 'src/**/*.ts*'",
-    "mv": "for f in dist/*.js; do mv -- \"$f\" \"${f%.js}\".mjs; done; mv dist/*.mjs .",
     "prepublishOnly": "npm run lint && npm run build",
     "test": "jest --config ./.jestrc.json"
   },
