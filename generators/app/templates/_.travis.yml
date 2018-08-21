@@ -7,7 +7,7 @@ node_js:
 # before_script:
 #   - npm install codecov coveralls --quiet
 script:
-#   - npm run test
+#   - npm cit --quiet
 # after_success:
 #   - 'cat ./coverage/lcov.info | coveralls'
 #   - 'cat ./coverage/lcov.info | codecov'

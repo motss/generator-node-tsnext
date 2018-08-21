@@ -6,26 +6,30 @@
 
 <hr />
 
-[![NPM][nodei-badge]][nodei-url]
-
 [![Version][version-badge]][version-url]
-[![Downloads][downloads-badge]][downloads-url]
+[![Node version][node-version-badge]][node-version-url]
 [![MIT License][mit-license-badge]][mit-license-url]
-[![Code of Conduct][coc-badge]][coc-url]
+
+[![Downloads][downloads-badge]][downloads-url]
+[![Total downloads][total-downloads-badge]][downloads-url]
+[![Packagephobia][packagephobia-badge]][packagephobia-url]
+[![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
 [![Build Status][travis-badge]][travis-url]
+[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
-[![NSP Status][nsp-badge]][nsp-url]
-[![Coverage percentage][coveralls-badge]][coveralls-url]
 [![codecov][codecov-badge]][codecov-url]
+[![Coverage Status][coveralls-badge]][coveralls-url]
 
-[![Codacy Badge][codacy-badge]][codacy-url]
 [![codebeat badge][codebeat-badge]][codebeat-url]
+[![Codacy Badge][codacy-badge]][codacy-url]
+[![Code of Conduct][coc-badge]][coc-url]
 
 > To scaffold a Node.js module or project written in [TypeScript][typescript-url].
 
 ## Table of contents
 
+- [Table of contents](#table-of-contents)
 - [Setup](#setup)
   - [Pre-requisites](#pre-requisites)
   - [Installation](#installation)
@@ -42,8 +46,8 @@ Please make sure that you have the following dependencies installed and setup co
 
 - [node][nodejs-url] >= `8.9.0`
 - [npm][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
-- [typescript][typescript-url] >= `2.6.2` ___(No guarantee it will work below the version specified here)___
-- [tslint][tslint-url] >= `5.8.0` ___(No guarantee it will work below the version specified here)___
+- [typescript][typescript-url] >= `3.0.1` ___(No guarantee it will work below the version specified here)___
+- [tslint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
 - [TSLint extension for your favorite text editor][tslint-extension-url]
 
 ### Installation
@@ -103,37 +107,40 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [yeoman-url]: http://yeoman.io
 
 <!-- Badges -->
-[nodei-badge]: https://nodei.co/npm/generator-node-tsnext.png?downloads=true&downloadRank=true&stars=true
+[version-badge]: https://flat.badgen.net/npm/v/generator-node-tsnext
+[node-version-badge]: https://flat.badgen.net/npm/node/generator-node-tsnext
+[mit-license-badge]: https://flat.badgen.net/npm/license/generator-node-tsnext
 
-[travis-badge]: https://img.shields.io/travis/motss/generator-node-tsnext.svg?style=flat-square
-[version-badge]: https://img.shields.io/npm/v/generator-node-tsnext.svg?style=flat-square
-[downloads-badge]: https://img.shields.io/npm/dm/generator-node-tsnext.svg?style=flat-square
-[mit-license-badge]: https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square
-[daviddm-badge]: https://img.shields.io/david/motss/generator-node-tsnext.svg?style=flat-square
-[nsp-badge]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646/badge?style=flat-square
+[downloads-badge]: https://flat.badgen.net/npm/dm/generator-node-tsnext
+[total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
+[packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
+[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/generator-node-tsnext
 
-[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
+[travis-badge]: https://flat.badgen.net/travis/motss/generator-node-tsnext
+[circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext
+[daviddm-badge]: https://flat.badgen.net/david/dep/motss/generator-node-tsnext
+[codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov
+[coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/generator-node-tsnext?label=coveralls
 
-[coveralls-badge]: https://coveralls.io/repos/github/motss/generator-node-tsnext/badge.svg?branch=master&style=flat-square
-[codecov-badge]: https://codecov.io/gh/motss/generator-node-tsnext/branch/master/graph/badge.svg?style=flat-square
-
-[codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9?style=flat-square
 [codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a?style=flat-square
+[codacy-badge]: https://api.codacy.com/project/badge/Grade/1ea482be29d14b848f5f8b34ca8e9dd9?style=flat-square
+[coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
-[nodei-url]: https://nodei.co/npm/generator-node-tsnext/
+[version-url]: https://www.npmjs.com/package/generator-node-tsnext
+[node-version-url]: https://nodejs.org/en/download
+[mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE
+
+[downloads-url]: http://www.npmtrends.com/generator-node-tsnext
+[packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
+[bundlephobia-url]: https://bundlephobia.com/result?p=generator-node-tsnext@1.2.0
 
 [travis-url]: https://travis-ci.org/motss/generator-node-tsnext
-[version-url]: https://www.npmjs.com/package/generator-node-tsnext
-[downloads-url]: http://www.npmtrends.com/generator-node-tsnext
-[mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE
+[circleci-url]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master
 [daviddm-url]: https://david-dm.org/motss/generator-node-tsnext
-[nsp-url]: https://nodesecurity.io/orgs/motss/projects/fb100587-da3c-46c1-afd6-7e90bf411646
-
-[coc-url]: https://github.com/motss/generator-node-tsnext/blob/master/CODE_OF_CONDUCT.md
-
 [coveralls-url]: https://coveralls.io/github/motss/generator-node-tsnext?branch=master
 [codecov-url]: https://codecov.io/gh/motss/generator-node-tsnext
 
-[codacy-url]: https://www.codacy.com/app/motss/generator-node-tsnext?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext&amp;utm_campaign=Badge_Grade
 [codebeat-url]: https://codebeat.co/projects/github-com-motss-generator-node-tsnext-master
+[codacy-url]: https://www.codacy.com/app/motss/generator-node-tsnext?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext&amp;utm_campaign=Badge_Grade
+[coc-url]: https://github.com/motss/generator-node-tsnext/blob/master/CODE_OF_CONDUCT.md

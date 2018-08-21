@@ -22,9 +22,10 @@
     "url": "<%= repoUrl %>"
   },
   "scripts": {
-    "build": "npm run build:cjs && npm run build:esm && rm -rf dist/ && echo \"> [build] Done!\"",
-    "build:cjs": "npm run lint && rm -rf dist/ && tsc -p tsconfig.json && mv dist/index.js dist/index.d.ts . && echo \"> [cjs] Done!\"",
-    "build:esm": "npm run lint && rm -rf dist/ && tsc -p tsconfig.esm.json && mv dist/index.js ./index.mjs && echo \"> [esm] Done!\"",
+    "build": "npm run cleanup && npm run build:cjs && npm run build:esm && mv dist/*.* . && rm -rf dist/ && echo \"> [build] Done!\"",
+    "build:cjs": "npm run lint && tsc -p tsconfig.json && echo \"> [cjs] Done!\"",
+    "build:esm": "npm run lint && tsc -p tsconfig.esm.json && echo \"> [esm] Done!\"",
+    "cleanup": "rm -rf ./*.*js ./*.d.ts dist/",
     "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish 'src/**/*.ts*'",
     "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish 'src/**/*.ts*'",
     "prepublishOnly": "npm run lint && npm run build",
