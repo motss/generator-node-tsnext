@@ -5,7 +5,8 @@ node_js:
   - 9
   - 10
 before_script:
-  - npm install -g codecov coveralls --quiet
+  - npm i -g npm@latest --quiet
+  - npm i codecov coveralls --quiet
 script:
   - npm cit --quiet
 after_success:

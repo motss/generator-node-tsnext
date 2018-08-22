@@ -13,7 +13,6 @@
 [![Downloads][downloads-badge]][downloads-url]
 [![Total downloads][total-downloads-badge]][downloads-url]
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
-[![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
 [![Build Status][travis-badge]][travis-url]
 [![CircleCI][circleci-badge]][circleci-url]
@@ -114,7 +113,6 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [downloads-badge]: https://flat.badgen.net/npm/dm/generator-node-tsnext
 [total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
-[bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/generator-node-tsnext
 
 [travis-badge]: https://flat.badgen.net/travis/motss/generator-node-tsnext
 [circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext
@@ -133,7 +131,6 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 
 [downloads-url]: http://www.npmtrends.com/generator-node-tsnext
 [packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
-[bundlephobia-url]: https://bundlephobia.com/result?p=generator-node-tsnext
 
 [travis-url]: https://travis-ci.org/motss/generator-node-tsnext
 [circleci-url]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master

@@ -25,9 +25,9 @@ jobs:
             - v{{ .Environment.CIRCLE_BUILD_NUM }}-npm-lock-master-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "package-lock.json" }}
             - v{{ .Environment.CIRCLE_BUILD_NUM }}-npm-cache-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_JOB }}
             - v{{ .Environment.CIRCLE_BUILD_NUM }}-npm-cache-master-{{ .Environment.CIRCLE_BRANCH }}-{{ .Environment.CIRCLE_JOB }}
-      # - run:
-      #     name: Install latest NPM
-      #     command: npm i -g npm --quiet
+      - run:
+          name: Install latest NPM
+          command: npm i -g npm@latest --quiet
       - run:
           name: Install dependencies
           command: npm cit --quiet
