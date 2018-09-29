@@ -81,12 +81,12 @@
     "yosay": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.4.0",
+    "eslint": "^5.6.1",
     "eslint-config-google": "^0.9.1",
     "gulp": "^4.0.0",
     "husky": "^0.14.3",
-    "jest": "^23.5.0",
-    "lint-staged": "^7.0.0",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.7.0"
   },
