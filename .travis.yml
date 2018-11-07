@@ -1,8 +1,13 @@
 language: node_js
-dist: trusty
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+    - os: windows
 node_js:
   - 8
   - 10
+  - 11
 before_script:
   - npm i -g npm@latest --quiet
   - npm i codecov coveralls --quiet

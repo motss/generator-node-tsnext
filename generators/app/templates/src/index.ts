@@ -1,5 +1,3 @@
-// @ts-check
-
 export async function greeting(name: string = 'World') {
   return greetingSync(name);
 }
