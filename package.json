@@ -19,88 +19,26 @@
     "url": "https://github.com/motss"
   },
   "files": [
-    "generators"
+    "app"
   ],
-  "main": "generators/index.js",
+  "main": "app/index.js",
   "scripts": {
-    "precommit": "lint-staged",
-    "prepublishOnly": "npm run pretest && npm run test",
-    "pretest": "eslint . --fix",
-    "test": "jest"
-  },
-  "eslintConfig": {
-    "env": {
-      "jest": true,
-      "node": true,
-      "es6": true
-    },
-    "extends": [
-      "google"
-    ],
-    "rules": {
-      "indent": [
-        "error",
-        2
-      ],
-      "max-len": [
-        "error",
-        {
-          "code": 100,
-          "tabWidth": 2
-        }
-      ],
-      "require-jsdoc": [
-        "error",
-        {
-          "require": {
-            "FunctionDeclaration": false,
-            "MethodDefinition": false,
-            "ClassDeclaration": false,
-            "ArrowFunctionExpression": false,
-            "FunctionExpression": false
-          }
-        }
-      ]
-    }
-  },
-  "jest": {
-    "collectCoverage": true,
-    "coverageDirectory": "./coverage/",
-    "testEnvironment": "node"
+    "clean": "rm -rf ./*.*js ./*.d.ts dist/",
+    "test": "jest --config ./.jestrc.json"
   },
   "dependencies": {
     "chalk": "^2.1.0",
-    "execa": "^0.11.0",
-    "gh-user": "^3.0.0",
-    "git-remote-origin-url": "^2.0.0",
-    "github-username": "^4.1.0",
-    "gulp-install": "^1.1.0",
-    "gulp-template": "^5.0.0",
-    "minimist": "^1.2.0",
+    "gh-user": "^4.0.0",
     "yeoman-generator": "^3.1.1",
     "yosay": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^5.8.0",
-    "eslint-config-google": "^0.9.1",
-    "gulp": "^4.0.0",
-    "husky": "^0.14.3",
     "jest": "^23.6.0",
-    "lint-staged": "^7.3.0",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^1.7.0"
   },
   "engines": {
     "node": ">= 8.9.0",
     "npm": ">= 5.5.1"
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "./*.json": [
-      "git add"
-    ]
   }
 }

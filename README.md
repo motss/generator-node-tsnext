@@ -24,7 +24,7 @@
 [![Codacy Badge][codacy-badge]][codacy-url]
 [![Code of Conduct][coc-badge]][coc-url]
 
-> To scaffold a Node.js module or project written in [TypeScript][typescript-url].
+> To scaffold a Node.js module or any project written in [TypeScript][typescript-url].
 
 ## Table of contents
 
@@ -43,17 +43,17 @@
 
 Please make sure that you have the following dependencies installed and setup correctly:-
 
-- [node][nodejs-url] >= `8.9.0`
-- [npm][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
-- [typescript][typescript-url] >= `3.0.1` ___(No guarantee it will work below the version specified here)___
-- [tslint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
+- [Node.js][nodejs-url] >= `8.9.0`
+- [NPM][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
+- [TypeScript][typescript-url] >= `3.0.1` ___(No guarantee it will work below the version specified here)___
+- [TSLint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
 - [TSLint extension for your favorite text editor][tslint-extension-url]
 
 ### Installation
 
 #### NPM
 
-First, install `generator-node-tsnext` using [npm][npm-url] (we assume you have pre-installed [node.js][nodejs-url]).
+First, install `generator-node-tsnext` using [NPM][npm-url] (we assume you have pre-installed [Node.js][nodejs-url]).
 
 ```sh
 # Install globally with NPM
@@ -65,7 +65,7 @@ Then generate your new project:
 ```sh
 # Create a new directory if you haven't already.
 # Then change to that new directory.
-$ mkdir my-tsnext-app && cd my-tsnext-app
+$ mkdir my-app && cd my-app
 
 # Init
 $ yo node-tsnext
@@ -73,12 +73,12 @@ $ yo node-tsnext
 
 #### NPX
 
-[npx][npx-url] comes in a package as of [node][nodejs-url] `8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
+[NPX][npx-url] comes in a package as of [Node.js][nodejs-url] `v8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
 
 ```sh
 # Create a new directory if you haven't already.
 # Then change to that new directory.
-$ mkdir my-tsnext-app && cd my-tsnext-app
+$ mkdir my-app && cd my-app
 
 # Install packages with NPX and execute the CLI with this one-liner
 $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
@@ -102,8 +102,8 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [npx-url]: https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b
 [tslint-extension-url]: https://palantir.github.io/tslint/usage/third-party-tools
 [tslint-url]: https://palantir.github.io/tslint
-[typescript-url]: http://www.typescriptlang.org
-[yeoman-url]: http://yeoman.io
+[typescript-url]: https://www.typescriptlang.org
+[yeoman-url]: https://yeoman.io
 
 <!-- Badges -->
 [version-badge]: https://flat.badgen.net/npm/v/generator-node-tsnext
@@ -129,7 +129,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [node-version-url]: https://nodejs.org/en/download
 [mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE
 
-[downloads-url]: http://www.npmtrends.com/generator-node-tsnext
+[downloads-url]: https://www.npmtrends.com/generator-node-tsnext
 [packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
 
 [travis-url]: https://travis-ci.org/motss/generator-node-tsnext

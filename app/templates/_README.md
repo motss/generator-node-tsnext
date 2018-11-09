@@ -129,7 +129,7 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [node-version-url]: https://nodejs.org/en/download
 [mit-license-url]: https://github.com/motss/<%= packageName %>/blob/master/LICENSE
 
-[downloads-url]: http://www.npmtrends.com/<%= packageName %>
+[downloads-url]: https://www.npmtrends.com/<%= packageName %>
 [packagephobia-url]: https://packagephobia.now.sh/result?p=<%= packageName %>
 [bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>
 

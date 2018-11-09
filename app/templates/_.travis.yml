@@ -1,8 +1,10 @@
 language: node_js
+sudo: required
 dist: trusty
 node_js:
   - v8
   - v10
+  - v11
 # before_script:
 #   - npm i -g npm@latest  --quiet
 #   - npm i codecov coveralls --quiet

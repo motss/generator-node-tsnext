@@ -1,22 +1,24 @@
+jest.mock('gh-user', () => jest.fn().mockImplementation(() => {
+  return Promise.reject({});
+}));
+
 const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-node-tsnext:app', () => {
+describe(`Github info and 'docDescription' are missing`, () => {
   beforeAll(() => {
     return helpers
-      .run(path.join(__dirname, '../generators/app'))
+      .run(path.join(__dirname, '../app'))
       .withPrompts({
         packageName: `${process.cwd().replace(/(?:.*\/)(.+)/i, '$1')}`,
-        description: 'Yet another generator to disrupt the world',
-        homepage: 'https://github.com/awesome-tsnext',
-        repoUrl: 'git@github.com:cashblack/awesome-tsnext.git',
+        homepage: 'https://github.com/awesome-next',
+        repoUrl: 'git@github.com:cashblack/awesome-next.git',
         authorName: 'Cash Black',
         authorEmail: 'cash.black@gmail.com',
         authorUrl: 'cash-black.com',
         gitName: 'cashblack',
-      })
-      .toPromise();
+      });
   });
 
   it('creates files', () => {
@@ -40,4 +42,5 @@ describe('generator-node-tsnext:app', () => {
       'src/index.ts',
     ]);
   });
+
 });
