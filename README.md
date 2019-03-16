@@ -28,20 +28,17 @@
 
 > To scaffold a Node.js module or any project written in [TypeScript][typescript-url].
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-- [Table of contents](#table-of-contents)
-- [Setup](#setup)
-  - [Pre-requisites](#pre-requisites)
-  - [Installation](#installation)
-    - [NPM](#npm)
-    - [NPX](#npx)
+- [Pre-requisites](#pre-requisites)
+- [Installation](#installation)
+  - [NPM](#npm)
+  - [NPX](#npx)
 - [Getting To Know Yeoman](#getting-to-know-yeoman)
 - [License](#license)
 
-## Setup
 
-### Pre-requisites
+## Pre-requisites
 
 Please make sure that you have the following dependencies installed and setup correctly:-
 
@@ -51,9 +48,9 @@ Please make sure that you have the following dependencies installed and setup co
 - [TSLint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
 - [TSLint extension for your favorite text editor][tslint-extension-url]
 
-### Installation
+## Installation
 
-#### NPM
+### NPM
 
 First, install `generator-node-tsnext` using [NPM][npm-url] (we assume you have pre-installed [Node.js][nodejs-url]).
 
@@ -73,7 +70,7 @@ $ mkdir my-app && cd my-app
 $ yo node-tsnext
 ```
 
-#### NPX
+### NPX
 
 [NPX][npx-url] comes in a package as of [Node.js][nodejs-url] `v8.9.0`. This means that you can run any CLI written in [Node.js][nodejs-url] without globally installing it.
 
