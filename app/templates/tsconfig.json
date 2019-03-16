@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
     "newLine": "LF",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "removeComments": true,
-    "resolveJsonModule": true,
-    "strictNullChecks": true,
-    "traceResolution": false,
+    "resolveJsonModule": false,
+    "strict": true,
 
     "lib": [
       "esnext",
@@ -23,19 +19,12 @@
       "esnext.symbol"
     ],
     "moduleResolution": "node",
-    "module": "commonjs",
+    "module": "esnext",
     "target": "esnext",
-    "jsx": "react",
-    "jsxFactory": "h",
     "rootDir": "src",
     "outDir": "dist",
     "declaration": true,
     "declarationDir": "dist"
   },
-  "include": ["src/**/*"],
-  "exclude": [
-    "node_modules",
-    "src/test*/**/*",
-    "src/demo*/**/*"
-  ]
+  "include": ["src/**/*"]
 }

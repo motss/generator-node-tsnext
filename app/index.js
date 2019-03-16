@@ -82,6 +82,7 @@ module.exports = class extends Generator {
       this.props = Object.assign({}, props, {
         docDescription: (props.description || fallbackDescription).replace(
           /typeScript/i, '[TypeScript][typescript-url]'),
+        thisYear: new Date().getFullYear(),
       });
     });
   }
@@ -90,8 +91,8 @@ module.exports = class extends Generator {
     const NON_TPLS = [
       'src/index.ts',
       'CONTRIBUTORS',
-      'tsconfig.esm.json',
       'tsconfig.json',
+      'tsconfig.test.json',
       'tslint.json',
       'tslint.prod.json',
     ];

@@ -3,8 +3,8 @@
   "collectCoverage": true,
   "collectCoverageFrom": [
     "!**/node_modules/**",
-    "!**/src/demo/**/*.{js|jsx}",
-    "!**/src/test*/**/*.{js|jsx}",
+    "!**/src/demo/**/*.js?(x)",
+    "!**/src/test*/**/*.js?(x)",
     "<rootDir>/app/index.js"
   ],
   "coverageDirectory": "./coverage",

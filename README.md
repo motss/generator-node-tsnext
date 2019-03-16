@@ -6,6 +6,8 @@
 
 <hr />
 
+[![Follow me][follow-me-badge]][follow-me-url]
+
 [![Version][version-badge]][version-url]
 [![Node version][node-version-badge]][node-version-url]
 [![MIT License][mit-license-badge]][mit-license-url]
@@ -106,7 +108,9 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [yeoman-url]: https://yeoman.io
 
 <!-- Badges -->
-[version-badge]: https://flat.badgen.net/npm/v/generator-node-tsnext
+[follow-me-badge]: https://flat.badgen.net/twitter/follow/igarshmyb?icon=twitter
+
+[version-badge]: https://flat.badgen.net/npm/v/generator-node-tsnext?icon=npm
 [node-version-badge]: https://flat.badgen.net/npm/node/generator-node-tsnext
 [mit-license-badge]: https://flat.badgen.net/npm/license/generator-node-tsnext
 
@@ -114,10 +118,10 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
 
-[travis-badge]: https://flat.badgen.net/travis/motss/generator-node-tsnext
-[circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext
+[travis-badge]: https://flat.badgen.net/travis/motss/generator-node-tsnext?icon=travis
+[circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext?icon=circleci
 [daviddm-badge]: https://flat.badgen.net/david/dep/motss/generator-node-tsnext
-[codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov
+[codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov&icon=codecov
 [coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/generator-node-tsnext?label=coveralls
 
 [codebeat-badge]: https://codebeat.co/badges/2e98378b-4e11-497e-a692-ba66a4d1c71a?style=flat-square
@@ -125,6 +129,8 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
+[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext
+
 [version-url]: https://www.npmjs.com/package/generator-node-tsnext
 [node-version-url]: https://nodejs.org/en/download
 [mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE

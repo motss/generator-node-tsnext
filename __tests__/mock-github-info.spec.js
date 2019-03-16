@@ -38,6 +38,7 @@ describe(`mock Github info`, () => {
         authorEmail: 'cash.black@gmail.com',
         authorUrl: 'cash-black.com',
         gitName: 'cashblack',
+        thisYear: new Date().getFullYear(),
       });
   });
 
@@ -53,8 +54,8 @@ describe(`mock Github info`, () => {
       'LICENSE',
       'README.md',
 
-      'tsconfig.esm.json',
       'tsconfig.json',
+      'tsconfig.test.json',
       'tslint.json',
       'tslint.prod.json',
       'package.json',
