@@ -6,6 +6,8 @@
 
 <hr />
 
+[![Follow me][follow-me-badge]][follow-me-url]
+
 [![Version][version-badge]][version-url]
 [![Node version][node-version-badge]][node-version-url]
 [![MIT License][mit-license-badge]][mit-license-url]
@@ -15,7 +17,6 @@
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
 [![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
-[![Build Status][travis-badge]][travis-url]
 [![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![codecov][codecov-badge]][codecov-url]
@@ -27,9 +28,8 @@
 
 > Better greeting message
 
-## Table of contents
+## Table of contents <!-- omit in toc -->
 
-- [Table of contents](#table-of-contents)
 - [Pre-requisites](#pre-requisites)
 - [Setup](#setup)
   - [Install](#install)
@@ -66,8 +66,6 @@ const greeting = require('<%= packageName %>');
 #### Native ES modules or TypeScript
 
 ```ts
-// @ts-check
-
 import greeting from '<%= packageName %>';
 ```
 
@@ -105,7 +103,9 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [string-mdn-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
 
 <!-- Badges -->
-[version-badge]: https://flat.badgen.net/npm/v/<%= packageName %>
+[follow-me-badge]: https://flat.badgen.net/twitter/follow/<%= gitName %>?icon=twitter
+
+[version-badge]: https://flat.badgen.net/npm/v/<%= packageName %>?icon=npm
 [node-version-badge]: https://flat.badgen.net/npm/node/<%= packageName %>
 [mit-license-badge]: https://flat.badgen.net/npm/license/<%= packageName %>
 
@@ -114,31 +114,31 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/<%= packageName %>
 [bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/<%= packageName %>
 
-[travis-badge]: https://flat.badgen.net/travis/motss/<%= packageName %>
-[circleci-badge]: https://flat.badgen.net/circleci/github/motss/<%= packageName %>
-[daviddm-badge]: https://flat.badgen.net/david/dep/motss/<%= packageName %>
-[codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/<%= packageName %>?label=codecov
-[coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/<%= packageName %>?label=coveralls
+[circleci-badge]: https://flat.badgen.net/circleci/github/<%= gitName %>/<%= packageName %>?icon=circleci
+[daviddm-badge]: https://flat.badgen.net/david/dep/<%= gitName %>/<%= packageName %>
+[codecov-badge]: https://flat.badgen.net/codecov/c/github/<%= gitName %>/<%= packageName %>?label=codecov&icon=codecov
+[coveralls-badge]: https://flat.badgen.net/coveralls/c/github/<%= gitName %>/<%= packageName %>?label=coveralls
 
 [codebeat-badge]: https://codebeat.co/badges/123
 [codacy-badge]: https://api.codacy.com/project/badge/Grade/123
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
+[follow-me-url]: https://twitter.com/<%= gitName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=<%= gitName %>/<%= packageName %>
+
 [version-url]: https://www.npmjs.com/package/<%= packageName %>
 [node-version-url]: https://nodejs.org/en/download
-[mit-license-url]: https://github.com/motss/<%= packageName %>/blob/master/LICENSE
+[mit-license-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/LICENSE
 
 [downloads-url]: https://www.npmtrends.com/<%= packageName %>
 [packagephobia-url]: https://packagephobia.now.sh/result?p=<%= packageName %>
 [bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>
 
-[travis-url]: https://travis-ci.org/motss/<%= packageName %>
-[circleci-url]: https://circleci.com/gh/motss/<%= packageName %>/tree/master
-[daviddm-url]: https://david-dm.org/motss/<%= packageName %>
-[codecov-url]: https://codecov.io/gh/motss/<%= packageName %>
-[coveralls-url]: https://coveralls.io/github/motss/<%= packageName %>?branch=master
+[circleci-url]: https://circleci.com/gh/<%= gitName %>/<%= packageName %>/tree/master
+[daviddm-url]: https://david-dm.org/<%= gitName %>/<%= packageName %>
+[codecov-url]: https://codecov.io/gh/<%= gitName %>/<%= packageName %>
+[coveralls-url]: https://coveralls.io/github/<%= gitName %>/<%= packageName %>?branch=master
 
-[codebeat-url]: https://codebeat.co/projects/github-com-motss-<%= packageName %>-master
-[codacy-url]: https://www.codacy.com/app/motss/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/<%= packageName %>&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/motss/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
+[codebeat-url]: https://codebeat.co/projects/github-com-<%= gitName %>-<%= packageName %>-master
+[codacy-url]: https://www.codacy.com/app/<%= gitName %>/<%= packageName %>?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=<%= gitName %>/<%= packageName %>&amp;utm_campaign=Badge_Grade
+[coc-url]: https://github.com/<%= gitName %>/<%= packageName %>/blob/master/CODE_OF_CONDUCT.md
