@@ -28,8 +28,8 @@
     "build:esm": "tsc -p tsconfig.json && npm run mv && echo \"> [esm] Done!\"",
     "clean": "rm -rf ./*.*js ./*.d.ts dist/",
     "mv": "echo \"> [WARN] The 'mv' command might not work well on Windows!\"; for f in dist/*.js; do mv -- \"$f\" \"${f%.js}\".mjs; done; mv dist/*.mjs .",
-    "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish 'src/**/*.ts*'",
-    "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish 'src/**/*.ts*'",
+    "lint": "tslint --project tsconfig.json --config tslint.prod.json --format stylish",
+    "lint:debug": "tslint --project tsconfig.json --config tslint.json --format stylish",
     "prepublishOnly": "npm run lint && npm run build"
   },
   "dependencies": {},
