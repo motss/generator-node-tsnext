@@ -42,8 +42,8 @@
 
 Please make sure that you have the following dependencies installed and setup correctly:-
 
-- [Node.js][nodejs-url] >= `8.9.0`
-- [NPM][npm-url] >= `5.5.1` ___(The minimum NPM version for [node:carbon][node-releases-url])___
+- [Node.js][nodejs-url] >= `8.16.0`
+- [NPM][npm-url] >= `6.4.1`
 - [TypeScript][typescript-url] >= `3.0.1` ___(No guarantee it will work below the version specified here)___
 - [TSLint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
 - [TSLint extension for your favorite text editor][tslint-extension-url]

@@ -48,17 +48,16 @@ describe(`mock Github info`, () => {
       '.gitattributes',
       '.gitignore',
       '.npmrc',
-      '.travis.yml',
 
-      'CONTRIBUTORS',
       'LICENSE',
       'README.md',
 
+      'package.json',
+      'rollup.config.js',
       'tsconfig.json',
-      'tsconfig.test.json',
+      'tsconfig.prod.json',
       'tslint.json',
       'tslint.prod.json',
-      'package.json',
 
       'src/index.ts',
     ]);
