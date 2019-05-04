@@ -16,7 +16,6 @@
 [![Total downloads][total-downloads-badge]][downloads-url]
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
 
-[![Build Status][travis-badge]][travis-url]
 [![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![codecov][codecov-badge]][codecov-url]
@@ -115,7 +114,6 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
 
-[travis-badge]: https://flat.badgen.net/travis/motss/generator-node-tsnext?icon=travis
 [circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext?icon=circleci
 [daviddm-badge]: https://flat.badgen.net/david/dep/motss/generator-node-tsnext
 [codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov&icon=codecov
@@ -135,7 +133,6 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 [downloads-url]: https://www.npmtrends.com/generator-node-tsnext
 [packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
 
-[travis-url]: https://travis-ci.org/motss/generator-node-tsnext
 [circleci-url]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master
 [daviddm-url]: https://david-dm.org/motss/generator-node-tsnext
 [coveralls-url]: https://coveralls.io/github/motss/generator-node-tsnext?branch=master
@@ -143,4 +140,4 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 
 [codebeat-url]: https://codebeat.co/projects/github-com-motss-generator-node-tsnext-master
 [codacy-url]: https://www.codacy.com/app/motss/generator-node-tsnext?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/motss/generator-node-tsnext/blob/master/CODE_OF_CONDUCT.md
+[coc-url]: https://github.com/motss/generator-node-tsnext/blob/master/code-of-conduct.md
