@@ -1,6 +1,6 @@
 {
   "name": "generator-node-tsnext",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Generator for developing in TypeScript Next",
   "keywords": [
     "generator",
