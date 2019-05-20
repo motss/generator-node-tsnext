@@ -34,6 +34,8 @@
   - [NPM](#npm)
   - [NPX](#npx)
 - [Getting To Know Yeoman](#getting-to-know-yeoman)
+- [Contributing](#contributing)
+  - [Code of Conduct](#code-of-conduct)
 - [License](#license)
 
 
@@ -89,6 +91,12 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 - Yeoman can be too opinionated at times but is easily convinced not to be.
 - Feel free to [learn more about Yeoman][yeoman-url].
 
+## Contributing
+
+### Code of Conduct
+
+Please note that this project is released with a [Contributor Code of Conduct][coc-url]. By participating in this project you agree to abide by its terms.
+
 ## License
 
 [MIT License](https://motss.mit-license.org/) © Rong Sen Ng
@@ -128,7 +136,7 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 
 [version-url]: https://www.npmjs.com/package/generator-node-tsnext
 [node-version-url]: https://nodejs.org/en/download
-[mit-license-url]: https://github.com/motss/generator-node-tsnext/blob/master/LICENSE
+[mit-license-url]: /LICENSE
 
 [downloads-url]: https://www.npmtrends.com/generator-node-tsnext
 [packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
@@ -140,4 +148,4 @@ $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 
 [codebeat-url]: https://codebeat.co/projects/github-com-motss-generator-node-tsnext-master
 [codacy-url]: https://www.codacy.com/app/motss/generator-node-tsnext?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext&amp;utm_campaign=Badge_Grade
-[coc-url]: https://github.com/motss/generator-node-tsnext/blob/master/code-of-conduct.md
+[coc-url]: /CODE-OF-CONDUCT.md

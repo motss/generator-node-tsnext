@@ -89,7 +89,6 @@ module.exports = class extends Generator {
 
   writing() {
     const NON_TPLS = [
-      'rollup.config.js',
       'src/index.ts',
       'tsconfig.json',
       'tsconfig.prod.json',

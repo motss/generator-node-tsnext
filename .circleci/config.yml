@@ -6,14 +6,14 @@ version: 2.1
 
 aliases:
   - &restore-cache-deps
-      key: dependency-cache-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}-2
+      key: dependency-cache-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}-2.1
   - &save-cache-deps
-      key: dependency-cache-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}-2
+      key: dependency-cache-{{ .Environment.CIRCLE_BRANCH }}-{{ checksum "package.json" }}-2.1
       paths:
         - node_modules
 
 defaults: &defaults
-  working_directory: ~/async-poll
+  working_directory: ~/generator-node-tsnext
   steps:
     - checkout
     - restore_cache: *restore-cache-deps

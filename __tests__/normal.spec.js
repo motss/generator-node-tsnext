@@ -30,7 +30,6 @@ describe('normal', () => {
       'README.md',
 
       'package.json',
-      'rollup.config.js',
       'tsconfig.json',
       'tsconfig.prod.json',
       'tslint.json',

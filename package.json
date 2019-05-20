@@ -23,7 +23,7 @@
   ],
   "main": "app/index.js",
   "scripts": {
-    "clean": "rm -rf ./*.*js ./*.d.ts dist/",
+    "clean": "shx rm -rf dist/ coverage/",
     "test": "jest --config ./.jestrc.json"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "jest": "^24.8.0",
+    "shx": "^0.3.2",
     "yeoman-assert": "^3.1.0",
     "yeoman-test": "^2.0.0"
   },
