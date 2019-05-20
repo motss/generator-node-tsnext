@@ -5,6 +5,11 @@ const ghUser = require('gh-user');
 
 module.exports = class extends Generator {
   initializing() {
+    this.user.github.username().then(console.log).catch((e) => {
+      console.log('haha', e);
+      return [];
+    });
+
     const ghTask = this.user.github.username()
       .then(un => Promise.all([un, ghUser(un)]))
       .then(([un, info]) => {
@@ -13,6 +18,8 @@ module.exports = class extends Generator {
       .catch(() => []);
 
     return ghTask.then(([ username, homepage ]) => {
+      console.log(this.user.git.email());
+
       this.user.info = {
         name: this.user.git.name(),
         email: this.user.git.email(),
@@ -25,6 +32,8 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(yosay(`Welcome to the stunning ${chalk.red('generator-node-tsnext')}!`));
+
+    console.log(this.user.info);
 
     const fallbackDescription =
       'Simple Node.js module to output greeting message, written in TypeScript';
