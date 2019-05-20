@@ -29,9 +29,9 @@
   "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run clean && npm run npm run ts -- -p tsconfig.prod.json",
+    "build": "npm run clean && npm run ts -- -p tsconfig.prod.json",
     "clean": "shx rm -rf dist/",
-    "lint": "npm run lint -- --config tslint.prod.json",
+    "lint": "npm run lint:debug -- --config tslint.prod.json",
     "lint:debug": "tslint --project tsconfig.json --format stylish",
     "prepublishOnly": "npm run lint && npm run build",
     "test": "shx echo 'Write your own tests'",
