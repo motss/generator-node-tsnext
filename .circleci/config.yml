@@ -54,7 +54,7 @@ jobs:
 
 workflows:
   version: 2
-  node-multi-build:
+  multi-build-n-test:
     jobs:
       - node-v8
       - node-v10
