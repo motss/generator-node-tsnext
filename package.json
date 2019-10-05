@@ -22,9 +22,18 @@
     "app"
   ],
   "main": "app/index.js",
+  "module": "app/index.js",
   "scripts": {
-    "clean": "shx rm -rf dist/ coverage/",
-    "test": "jest --config ./.jestrc.json"
+    "build": "npm run clean && npm run lint && npm run ts -- -p ./tsconfig.json",
+    "build:prod": "npm run clean && npm run lint:prod && npm run ts -- -p ./tsconfig.prod.json",
+    "clean": "shx rm -rf coverage/ app/tests/ app/index.js app/index.js.map app/index.d.ts app/index.d.ts.map",
+    "jest": "jest --config ./.jestrc.json",
+    "lint": "tslint --project tsconfig.json",
+    "lint:prod": "npm run lint -- --config tslint.prod.json --format stylish",
+    "prepublishOnly": "npm run build:prod",
+    "postpublish": "npm run clean",
+    "test": "npm run build && npm run jest",
+    "ts": "tsc"
   },
   "dependencies": {
     "chalk": "^2.1.0",
@@ -33,8 +42,18 @@
     "yosay": "^2.0.1"
   },
   "devDependencies": {
+    "@reallyland/tsconfig": "^1.0.0",
+    "@reallyland/tslint-config": "^1.1.1",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.11",
+    "@types/yeoman-assert": "^3.1.1",
+    "@types/yeoman-generator": "^3.1.4",
+    "@types/yeoman-test": "^2.0.3",
+    "@types/yosay": "0.0.29",
     "jest": "^24.9.0",
     "shx": "^0.3.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3",
     "yeoman-assert": "^3.1.1",
     "yeoman-test": "^2.0.0"
   },

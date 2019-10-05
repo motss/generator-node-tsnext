@@ -2,9 +2,8 @@
   "bail": true,
   "collectCoverage": true,
   "collectCoverageFrom": [
-    "!<rootDir>/node_modules/**",
-    "!<rootDir>/src/demo/**/*.js?(x)",
-    "!<rootDir>/src/test*/**/*.js?(x)",
+    "!**/node_modules/**",
+    "!**/src/test*/**/*.{js|jsx}",
     "<rootDir>/app/index.js"
   ],
   "coverageDirectory": "./coverage",
@@ -18,7 +17,7 @@
   },
   "testEnvironment": "node",
   "testMatch": [
-    "<rootDir>/__tests__/**/*.spec.js?(x)"
+    "<rootDir>/app/test*/**/*.spec.js?(x)"
   ],
   "verbose": true
 }
