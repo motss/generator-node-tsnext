@@ -24,8 +24,8 @@
   "main": "app/index.js",
   "module": "app/index.js",
   "scripts": {
-    "build": "npm run clean && npm run lint && npm run ts -- -p ./tsconfig.json",
-    "build:prod": "npm run clean && npm run lint:prod && npm run ts -- -p ./tsconfig.prod.json",
+    "build": "npm run clean && npm run lint && tsc -p ./tsconfig.json",
+    "build:prod": "npm run clean && npm run lint:prod && tsc -p ./tsconfig.prod.json",
     "clean": "shx rm -rf coverage/ app/tests/ app/index.js app/index.js.map app/index.d.ts app/index.d.ts.map",
     "jest": "jest --config ./.jestrc.json",
     "lint": "tslint --project tsconfig.json",
@@ -35,8 +35,13 @@
     "test": "npm run build && npm run jest",
     "ts": "tsc"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && tsc --noEmit"
+    }
+  },
   "dependencies": {
-    "chalk": "^2.1.0",
+    "chalk": "^3.0.0",
     "gh-user": "^4.0.0",
     "yeoman-generator": "^4.1.0",
     "yosay": "^2.0.1"
@@ -50,6 +55,7 @@
     "@types/yeoman-generator": "^3.1.4",
     "@types/yeoman-test": "^2.0.3",
     "@types/yosay": "0.0.29",
+    "husky": "^4.2.3",
     "jest": "^24.9.0",
     "shx": "^0.3.2",
     "tslint": "^5.20.0",
@@ -58,7 +64,7 @@
     "yeoman-test": "^2.0.0"
   },
   "engines": {
-    "node": ">= 8.16.0",
-    "npm": ">= 6.4.1"
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4"
   }
 }

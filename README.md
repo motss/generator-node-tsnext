@@ -6,6 +6,8 @@
 
 <hr />
 
+<a href="https://www.buymeacoffee.com/RLmMhgXFb" target="_blank" rel="noopener noreferrer"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 20px !important;width: auto !important;" ></a>
+[![tippin.me][tippin-me-badge]][tippin-me-url]
 [![Follow me][follow-me-badge]][follow-me-url]
 
 [![Version][version-badge]][version-url]
@@ -33,6 +35,7 @@
 - [Installation](#installation)
   - [NPM](#npm)
   - [NPX](#npx)
+- [Testing](#testing)
 - [Getting To Know Yeoman](#getting-to-know-yeoman)
 - [Contributing](#contributing)
   - [Code of Conduct](#code-of-conduct)
@@ -43,10 +46,10 @@
 
 Please make sure that you have the following dependencies installed and setup correctly:-
 
-- [Node.js][nodejs-url] >= `8.16.0`
-- [NPM][npm-url] >= `6.4.1`
-- [TypeScript][typescript-url] >= `3.0.1` ___(No guarantee it will work below the version specified here)___
-- [TSLint][tslint-url] >= `5.11.0` ___(No guarantee it will work below the version specified here)___
+- [Node.js][nodejs-url] >= `10.18.1`
+- [NPM][npm-url] >= `6.13.4`
+- [TypeScript][typescript-url] >= `3.8.3`
+- [TSLint][tslint-url] >= `6.1.0`
 - [TSLint extension for your favorite text editor][tslint-extension-url]
 
 ## Installation
@@ -84,6 +87,13 @@ $ mkdir my-app && cd my-app
 $ npx -p yo -p generator-node-tsnext -- yo node-tsnext
 ```
 
+## Testing
+
+Bring your own testing library/ framework based on your use case. But, here are a few to recommend if you haven't already had one:
+
+1. [Jest]
+2. [AVA]
+
 ## Getting To Know Yeoman
 
 - Yeoman has a heart of gold.
@@ -110,8 +120,11 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 [tslint-url]: https://palantir.github.io/tslint
 [typescript-url]: https://www.typescriptlang.org
 [yeoman-url]: https://yeoman.io
+[Jest]: https://github.com/facebook/jest
+[AVA]: https://github.com/avajs/ava
 
 <!-- Badges -->
+[tippin-me-badge]: https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@igarshmyb/F0918E
 [follow-me-badge]: https://flat.badgen.net/twitter/follow/igarshmyb?icon=twitter
 
 [version-badge]: https://flat.badgen.net/npm/v/generator-node-tsnext?icon=npm
@@ -132,7 +145,8 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 [coc-badge]: https://flat.badgen.net/badge/code%20of/conduct/pink
 
 <!-- Links -->
-[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-node-tsnext
+[tippin-me-url]: https://tippin.me/@igarshmyb
+[follow-me-url]: https://twitter.com/igarshmyb?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=motss/generator-lit-element-next
 
 [version-url]: https://www.npmjs.com/package/generator-node-tsnext
 [node-version-url]: https://nodejs.org/en/download

@@ -17,7 +17,6 @@
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
 [![Bundlephobia][bundlephobia-badge]][bundlephobia-url]
 
-[![CircleCI][circleci-badge]][circleci-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![codecov][codecov-badge]][codecov-url]
 [![Coverage Status][coveralls-badge]][coveralls-url]
@@ -114,7 +113,6 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/<%= packageName %>
 [bundlephobia-badge]: https://flat.badgen.net/bundlephobia/minzip/<%= packageName %>
 
-[circleci-badge]: https://flat.badgen.net/circleci/github/<%= gitName %>/<%= packageName %>?icon=circleci
 [daviddm-badge]: https://flat.badgen.net/david/dep/<%= gitName %>/<%= packageName %>
 [codecov-badge]: https://flat.badgen.net/codecov/c/github/<%= gitName %>/<%= packageName %>?label=codecov&icon=codecov
 [coveralls-badge]: https://flat.badgen.net/coveralls/c/github/<%= gitName %>/<%= packageName %>?label=coveralls
@@ -134,7 +132,6 @@ This methods works the same as `greeting(name)` except that this is the synchron
 [packagephobia-url]: https://packagephobia.now.sh/result?p=<%= packageName %>
 [bundlephobia-url]: https://bundlephobia.com/result?p=<%= packageName %>
 
-[circleci-url]: https://circleci.com/gh/<%= gitName %>/<%= packageName %>/tree/master
 [daviddm-url]: https://david-dm.org/<%= gitName %>/<%= packageName %>
 [codecov-url]: https://codecov.io/gh/<%= gitName %>/<%= packageName %>
 [coveralls-url]: https://coveralls.io/github/<%= gitName %>/<%= packageName %>?branch=master
