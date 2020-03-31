@@ -18,7 +18,7 @@
 [![Total downloads][total-downloads-badge]][downloads-url]
 [![Packagephobia][packagephobia-badge]][packagephobia-url]
 
-[![CircleCI][circleci-badge]][circleci-url]
+[![ci][ga-badge]][ga-url]
 [![Dependency Status][daviddm-badge]][daviddm-url]
 [![codecov][codecov-badge]][codecov-url]
 [![Coverage Status][coveralls-badge]][coveralls-url]
@@ -135,7 +135,7 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 [total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
 
-[circleci-badge]: https://flat.badgen.net/circleci/github/motss/generator-node-tsnext?icon=circleci
+[ga-badge]: https://github.com/motss/generator-node-tsnext/workflows/ci/badge.svg
 [daviddm-badge]: https://flat.badgen.net/david/dep/motss/generator-node-tsnext
 [codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov&icon=codecov
 [coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/generator-node-tsnext?label=coveralls
@@ -155,7 +155,7 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 [downloads-url]: https://www.npmtrends.com/generator-node-tsnext
 [packagephobia-url]: https://packagephobia.now.sh/result?p=generator-node-tsnext
 
-[circleci-url]: https://circleci.com/gh/motss/generator-node-tsnext/tree/master
+[ga-url]: https://github.com/motss/generator-node-tsnext/actions?query=workflow%3Aci
 [daviddm-url]: https://david-dm.org/motss/generator-node-tsnext
 [coveralls-url]: https://coveralls.io/github/motss/generator-node-tsnext?branch=master
 [codecov-url]: https://codecov.io/gh/motss/generator-node-tsnext
