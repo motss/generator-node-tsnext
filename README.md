@@ -135,7 +135,7 @@ Please note that this project is released with a [Contributor Code of Conduct][c
 [total-downloads-badge]: https://flat.badgen.net/npm/dt/generator-node-tsnext?label=total%20downloads
 [packagephobia-badge]: https://flat.badgen.net/packagephobia/install/generator-node-tsnext
 
-[ga-badge]: https://github.com/motss/generator-node-tsnext/workflows/ci/badge.svg
+[ga-badge]: https://github.com/motss/generator-node-tsnext/workflows/ci/badge.svg?branch=master
 [daviddm-badge]: https://flat.badgen.net/david/dep/motss/generator-node-tsnext
 [codecov-badge]: https://flat.badgen.net/codecov/c/github/motss/generator-node-tsnext?label=codecov&icon=codecov
 [coveralls-badge]: https://flat.badgen.net/coveralls/c/github/motss/generator-node-tsnext?label=coveralls
